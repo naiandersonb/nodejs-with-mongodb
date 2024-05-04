@@ -1,0 +1,31 @@
+###
+
+GET http://localhost:3000/books
+
+###
+
+GET http://localhost:3000/books/search?authorName=arroz
+
+###
+
+GET http://localhost:3000/books/662047a873404d31f595c313
+
+###
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+  "title": "Livro muito top 6",
+  "publishing_company": "publishing company A",
+  "author": "6626e13c6fbaee10b97d0c76",
+  "price": 32.50,
+  "pages": 300
+}
+
+###
+PUT http://localhost:3000/books/6622ed7cb3205b6ee67c419f
+Content-Type: application/json
+
+{ "title": "Novo título" }
+###
+DELETE http://localhost:3000/books/6622e956ac65b87348839939

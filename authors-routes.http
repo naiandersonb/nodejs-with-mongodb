@@ -1,0 +1,21 @@
+###
+GET http://localhost:3000/authors
+###
+
+GET http://localhost:3000/authors/6626e18e3db5abbe73749d68
+
+###
+POST http://localhost:3000/authors
+Content-Type: application/json
+
+{
+  "name": "JK Rolling Jr. 3",
+  "nationality": "Maranhense"
+}
+###
+PUT http://localhost:3000/authors/6626e18e3db5abbe73749d68
+Content-Type: application/json
+
+{ "name": "João Mourinho" }
+###
+DELETE http://localhost:3000/authors/6626e18e3db5abbe73749d68
